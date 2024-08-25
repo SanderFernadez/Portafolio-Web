@@ -56,7 +56,7 @@ a:hover{
     justify-content: center;
     display: inline-block;
     margin-top: 250px;
-    font-size: 25px;
+    font-size: 30px;
     margin-left: 105px;
 
 }
@@ -71,8 +71,8 @@ a:hover{
 }
 
 .emoji-hand{
-    font-size: 16px;
-    bottom: 20px;
+    font-size: 17px;
+    bottom: 25px;
     position: relative;
     background-color: rgba(104, 62, 201, 0.15); /* Ajuste de opacidad */
     border-radius: 15px; /* Aumenta el radio del borde */
@@ -95,38 +95,101 @@ a:hover{
   position: relative;
 }
 
-.avatar{
+.avatar {
     position: relative;
     z-index: 2; /* Asegura que el avatar quede delante del círculo */
-    max-width: 450px;
-    max-height: 500px;
-    margin-left: 640px;
-    margin-top: -400px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 100%;
+    
 }
 
-/*.circle {
+
+
+
+
+/* Avatar Para pantallas más grandes */
+@media (min-width: 1080px) {
+    .avatar {
+        max-width: 450px;
+        margin-left: 42%;
+        margin-top: -16%;
+        
+    }
+}
+
+/* Avatar Para laptops o pantallas medianas */
+@media (max-width: 1608px) and (min-width: 768px) {
+    .avatar {
+        max-width: 450px;
+        margin-left: 40.5%;
+        margin-top: -24%;
+    }
+}
+
+/* Avatar Para pantallas pequeñas (tablets y móviles) */
+@media (max-width: 767px) {
+    .avatar {
+        max-width: 200px;
+        margin-left: 25%;
+        margin-top: 0;
+    }
+}
+
+.circle {
+
     position: absolute;
-    background-color: #7648d7; 
-    width: 450px;  
-    height: 450px; 
+    background-color: rgba(98, 0, 234, 0.15); 
+    width: 464px;  
+    height: 460px; 
     border-radius: 50%; 
     z-index: 1; 
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-}*/
+    left: 54%;
+    transform: translate(-46%, -40%); 
+    box-shadow: 0 0 40px 10px rgba(98, 0, 234, 0.5);
+}
 
 .descargarPF {
     display: flex;
     flex-direction: column; /* Apila los elementos verticalmente */
     align-items: center; /* Centra los elementos horizontalmente */
-    font-size: 12px;
+    font-size: 14px;
     color: rgb(104, 62, 201); /* Color del texto general en el contenedor */
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 83%;
-    margin-top: -250px; 
-    z-index: 5;
+    
+    
 }
+
+
+/* Boton de descarga Para pantallas más grandes */
+@media (min-width: 1080px) {
+    .descargarPF {
+        margin-left: 83%;
+        margin-top: -400px; 
+        
+    }
+}
+
+/* Boton de descarga Para laptops o pantallas medianas */
+@media (max-width: 1608px) and (min-width: 768px) {
+    .descargarPF {
+        margin-left: 83%;
+        margin-top: -300px; 
+    }
+}
+
+
+/* Boton de descarga Para pantallas pequeñas (tablets y móviles) */
+@media (max-width: 767px) {
+    .descargarPF {
+        margin-left: 83%;
+        margin-top: -350px; 
+    }
+}
+
+
+
 
 .descargarPF a {
     display: flex;
@@ -134,22 +197,11 @@ a:hover{
     text-decoration: none; /* Elimina el subrayado del enlace */
     color: #7648d7; /* Color del texto dentro del enlace */
     margin-left: 40px;
-}
-
-.descargarPF p {
-    margin: 0; /* Elimina el margen predeterminado */
-}
-
-.down-arrow-alt {
-    margin-left: 10px; /* Espacio entre el texto y el ícono */
-    color: #7648d7; /* Color del ícono de la flecha */
-}
-
-
-.hablemos-btn box-icon {
-    margin-right: 10px; /* Espacio entre el ícono y el texto */
     
 }
+
+
+
 
 .hablemos-btn:hover {
     background-color: rgba(104, 62, 201, 0.25); /* Fondo más oscuro al pasar el cursor */
@@ -169,7 +221,7 @@ a:hover{
     border: none; /* Sin borde */
     border-radius: 20px; /* Bordes redondeados */
     padding: 10px 20px; /* Espacio interno */
-    font-size: 15px; /* Tamaño del texto */
+    font-size: 16px; /* Tamaño del texto */
     font-family: Arial, Helvetica, sans-serif; /* Fuente del texto */
     margin-left: -170px; /* Espacio a la izquierda del botón */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
@@ -183,4 +235,120 @@ a:hover{
 
 .hablemos-btn:hover {
     background-color: rgba(104, 62, 201, 0.25); /* Fondo más oscuro al pasar el cursor */
+}
+
+
+
+/* Fondo gris circular detrás del icono */
+.icono-bg {
+    background-color: rgba(41, 40, 40, 0.5); /* Gris semitransparente */
+    border-radius: 50%; /* Círculo perfecto */
+    padding: 20px; /* Espacio interno para dar la apariencia de círculo alrededor del icono */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Posición y Tamaño en Pantallas Grandes (Desktop) */
+.icono-flotante {
+    position: absolute;
+    z-index: 3;
+    transition: transform 0.5s ease; /* Añade una transición suave */
+}
+
+
+.icono-flotante:hover {
+    transform: rotate(360deg); /* Gira el ícono 360 grados */
+}
+
+/* Posición del icono de React */
+.react-icon {
+    top: 27%;
+    left: 45%;
+}
+
+/* Posición del icono de Java */
+.java-icon {
+    top: 50%;
+    right: 29%;
+}
+
+/* Posición del icono de Figma */
+.figma-icon {
+    bottom: 20%;
+    left: 42%;
+}
+
+/* Tamaño de íconos en pantallas grandes */
+.react-icon-size, .java-icon-size, .figma-icon-size {
+    width: 50px;
+    height: 50px;
+}
+
+/* Iconos Responsividad para pantallas medianas (Tablets) */
+@media (max-width: 1070px) {
+    .icono-flotante {
+        top: auto;
+        bottom: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .react-icon {
+        top: 20%;
+        left: 50%; /* Ajusta para centrar el icono */
+        transform: translateX(-50%);
+    }
+
+    .java-icon {
+        top: 40%;
+        left: 50%; /* Ajusta para centrar el icono */
+        transform: translateX(-50%);
+    }
+
+    .figma-icon {
+        top: 60%;
+        left: 50%; /* Ajusta para centrar el icono */
+        transform: translateX(-50%);
+    }
+
+    /* Tamaño de íconos en pantallas medianas */
+    .react-icon-size, .java-icon-size, .figma-icon-size {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Responsividad para pantallas pequeñas (Móviles) */
+@media (max-width: 768px) {
+    .icono-flotante {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .react-icon {
+        top: 20%;
+    }
+
+    .java-icon {
+        top: 40%;
+    }
+
+    .figma-icon {
+        top: 60%;
+    }
+
+    /* Tamaño de íconos en pantallas pequeñas */
+    .react-icon-size, .java-icon-size, .figma-icon-size {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+
+
+box-icon {
+    z-index: 3;
 }
