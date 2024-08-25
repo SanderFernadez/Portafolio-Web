@@ -46,7 +46,12 @@ a{
 
 a:hover{
     color: #7648d7;
+    
 }
+
+
+
+
 
 .txt-Presentacion {
     
@@ -101,6 +106,7 @@ a:hover{
     max-width: 100%;
     height: auto;
     border-radius: 100%;
+    background: linear-gradient(to right, #1E1E2F,#7648d7);
     
 }
 
@@ -150,7 +156,7 @@ a:hover{
     box-shadow: 0 0 40px 10px rgba(98, 0, 234, 0.5);
 }
 
-.descargarPF {
+.contenedor-cv  {
     display: flex;
     flex-direction: column; /* Apila los elementos verticalmente */
     align-items: center; /* Centra los elementos horizontalmente */
@@ -164,8 +170,8 @@ a:hover{
 
 /* Boton de descarga Para pantallas más grandes */
 @media (min-width: 1080px) {
-    .descargarPF {
-        margin-left: 83%;
+    .contenedor-cv {
+        margin-left: 74%;
         margin-top: -400px; 
         
     }
@@ -173,8 +179,8 @@ a:hover{
 
 /* Boton de descarga Para laptops o pantallas medianas */
 @media (max-width: 1608px) and (min-width: 768px) {
-    .descargarPF {
-        margin-left: 83%;
+    .contenedor-cv  {
+        margin-left: 73%;
         margin-top: -300px; 
     }
 }
@@ -182,7 +188,7 @@ a:hover{
 
 /* Boton de descarga Para pantallas pequeñas (tablets y móviles) */
 @media (max-width: 767px) {
-    .descargarPF {
+    .contenedor-cv  {
         margin-left: 83%;
         margin-top: -350px; 
     }
@@ -191,51 +197,68 @@ a:hover{
 
 
 
-.descargarPF a {
-    display: flex;
-    align-items: center; /* Centra verticalmente el ícono y el texto */
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    color: #7648d7; /* Color del texto dentro del enlace */
-    margin-left: 40px;
-    
-}
-
-
-
-
-.hablemos-btn:hover {
-    background-color: rgba(104, 62, 201, 0.25); /* Fondo más oscuro al pasar el cursor */
-}
-
-.down-arrow-alt {
-    margin-left: -150px; 
-    color: #080118;/* Espacio entre el texto y el icono */
-    
-}
-
 .hablemos-btn {
     display: flex;
-    align-items: center; /* Centra verticalmente el ícono y el texto */
-    background-color: rgba(104, 69, 184, 0.1); /* Fondo morado transparente */
-    color: #7B4AE2; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 20px; /* Bordes redondeados */
-    padding: 10px 20px; /* Espacio interno */
-    font-size: 16px; /* Tamaño del texto */
-    font-family: Arial, Helvetica, sans-serif; /* Fuente del texto */
-    margin-left: -170px; /* Espacio a la izquierda del botón */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    align-items: center;
+    background-color: rgba(104, 69, 184, 0.1);
+    color: #7B4AE2;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    z-index: 5;
+    
+    
+}
+
+.flecha-descarga {
+    display: flex;
+    color: #7B4AE2; /* Cambia el color del texto a morado */
+    border: none; 
+    padding: 10px 20px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
     z-index: 5;
     margin-top: 10px;
+    background-color: transparent; /* Fondo transparente */
+    
+    
 }
 
-.hablemos-btn box-icon {
-    margin-right: 10px; /* Espacio entre el ícono y el texto */
+.flecha-descarga a {
+    color: #7B4AE2; 
+    align-items: center;
+    display: flex;
+    
+    
 }
 
-.hablemos-btn:hover {
-    background-color: rgba(104, 62, 201, 0.25); /* Fondo más oscuro al pasar el cursor */
+.flecha-descarga a i {
+    font-size: 25px;
+    justify-content: center;
+    margin-left: 10px;
+    
+   }
+
+   .hablemos-btn a {
+        color:#7648d7;
+   }
+
+   .flecha-descarga a i:hover, 
+   .flecha-descarga a:hover,
+   .hablemos-btn a:hover 
+   {
+       color: #FFFFFF;
+   }
+
+.hablemos-btn i {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    font-size: 20px; /* Tamaño del icono */
 }
+
 
 
 
@@ -320,7 +343,7 @@ a:hover{
     }
 }
 
-/* Responsividad para pantallas pequeñas (Móviles) */
+/* Iconos Avatar Responsividad para pantallas pequeñas (Móviles) */
 @media (max-width: 768px) {
     .icono-flotante {
         left: 50%;
