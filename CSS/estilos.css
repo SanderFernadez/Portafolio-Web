@@ -87,6 +87,8 @@ a:hover{
     justify-content: center; /* Centra horizontalmente */
     max-width: fit-content; /* Ajusta el ancho al contenido */
     color: rgb(104, 62, 201);
+    box-shadow: 0 0 50px 20px rgba(96, 14, 211, 0.1);
+    
 
 
 }
@@ -238,7 +240,7 @@ a:hover{
 .flecha-descarga a i {
     font-size: 25px;
     justify-content: center;
-    margin-left: 10px;
+    margin-right: 5px;
     
    }
 
@@ -254,8 +256,9 @@ a:hover{
    }
 
 .hablemos-btn i {
-    margin-right: 10px; /* Espacio entre el icono y el texto */
+    margin-right: 5px; /* Espacio entre el icono y el texto */
     font-size: 20px; /* Tamaño del icono */
+
 }
 
 
@@ -323,6 +326,9 @@ a:hover{
         transform: translateX(-50%);
     }
 
+    
+
+
     .java-icon {
         top: 40%;
         left: 50%; /* Ajusta para centrar el icono */
@@ -369,8 +375,9 @@ a:hover{
 }
 
 
+hr.solid{
 
-
-box-icon {
-    z-index: 3;
+    border-top: 1px solid #7B4AE2;
+    margin-top: 300px;
+    border-color: rgba(104, 69, 184, 0.2);
 }
