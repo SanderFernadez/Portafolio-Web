@@ -130,7 +130,7 @@ a:hover{
     .avatar {
         max-width: 450px;
         margin-left: 40.5%;
-        margin-top: -24%;
+        margin-top: -20.5%;
     }
 }
 
@@ -380,4 +380,173 @@ hr.solid{
     border-top: 1px solid #7B4AE2;
     margin-top: 300px;
     border-color: rgba(104, 69, 184, 0.2);
+}
+
+/* Sección Info-extra */
+#Info-extra {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 20px; /* Espacio entre los elementos */
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Estilo específico para el contenedor unificado */
+.unified-text {
+    grid-column: span 3; /* Ocupa todo el ancho */
+    background-color: #17172C; /* Fondo oscuro */
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centrado vertical */
+}
+
+/* Bloque de texto individual dentro del contenedor unificado */
+.text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para el texto pequeño */
+.small-text {
+    font-size: 14px;
+    color: #8E7CC3; /* Color más claro */
+    margin-bottom: 5px;
+}
+
+/* Estilos para el texto grande */
+.large-text {
+    font-size: 20px;
+    color: #A392EC; /* Color del texto principal */
+    font-weight: bold;
+}
+
+/* Estilos de los encabezados */
+h3 {
+    font-size: 18px;
+    color: #7648d7;
+}
+
+h2 {
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+
+/* Sección Info-extra */
+#Info-extra {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+/* Contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 20px; /* Espacio entre los elementos */
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Fondo y borde del primer contenedor */
+.grid-container .grid-item:nth-child(1) {
+    background-color: transparent; 
+    border: 2px solid #5857E5; /* Borde específico */
+    border-radius: 10px;
+}
+
+/* Fondo y borde del segundo contenedor */
+.grid-container .grid-item:nth-child(2) {
+    background-color: #3C3C4E; /* Fondo específico */
+    border: 2px solid #7648D7; /* Borde específico */
+    border-radius: 10px;
+}
+
+/* Fondo y borde del tercer contenedor */
+.grid-container .grid-item:nth-child(3) {
+    
+    border: 2px solid #4e31d1; /* Borde específico */
+    border-radius: 10px;
+    background: transparent;
+}
+
+/* Estilos adicionales para hover */
+.grid-container .grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra para mejorar el efecto visual */
+}
+
+
+/* Elemento de la cuadrícula */
+.grid-item {
+    background-color: #2c2c36;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    background-color: transparent;
+    border: #1E1E2F;
+}
+
+/* Efecto de zoom al pasar el ratón */
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+
+/* Bloque de texto individual dentro del contenedor unificado */
+.text-block {
+    background-color: #1E1E3F; /* Fondo para cada bloque de texto */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Animación suave para hover */
+}
+
+/* Estilos para el texto pequeño */
+.small-text {
+    
+    font-size: 14px;
+    color: #8E7CC3; /* Color más claro */
+    margin-bottom: 5px;
+}
+
+/* Estilos para el texto grande */
+.large-text {
+    font-size: 20px;
+    color: #A392EC; /* Color del texto principal */
+    font-weight: bold;
+}
+
+/* Efecto hover para los bloques de texto */
+.text-block:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    background-color: #25254A; /* Cambia de color al pasar el mouse */
+}
+
+/* Estilos de los encabezados */
+
+h3 {
+    font-size: 18px;
+    color: #7648d7;
+}
+
+h2 {
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: bold;
 }
