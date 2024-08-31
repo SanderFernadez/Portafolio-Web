@@ -101,7 +101,7 @@ a:hover{
     background-color: #c52dda; /* Cambia de color al pasar el mouse */
     box-shadow: 0 0 40px 10px rgba(98, 0, 234, 0.5);
     color: white;
-    animation: wave-animation 1.5s ;
+    animation: wave-animation 1.5s infinite;
 
 }
 
