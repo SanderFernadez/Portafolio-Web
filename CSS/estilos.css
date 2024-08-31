@@ -75,7 +75,8 @@ a:hover{
     margin-top: 8px;
 }
 
-.emoji-hand{
+.saludar{
+   
     font-size: 17px;
     bottom: 25px;
     position: relative;
@@ -83,15 +84,47 @@ a:hover{
     border-radius: 15px; /* Aumenta el radio del borde */
     padding: 10px 20px; /* Añade espacio alrededor del contenido */
     display: flex; /* Utiliza flexbox para centrar los elementos */
-    align-items: center; /* Centra verticalmente */
-    justify-content: center; /* Centra horizontalmente */
     max-width: fit-content; /* Ajusta el ancho al contenido */
     color: rgb(104, 62, 201);
     box-shadow: 0 0 50px 20px rgba(96, 14, 211, 0.1);
     
+}
 
+.saludar h2{
+    font-size: 18px;
+    padding: 6.5px;
+    
+}
+
+.saludar:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    background-color: #c52dda; /* Cambia de color al pasar el mouse */
+    box-shadow: 0 0 40px 10px rgba(98, 0, 234, 0.5);
+    color: white;
+    animation: wave-animation 1.5s ;
 
 }
+
+@keyframes wave-animation {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-10deg); }
+    40% { transform: rotate(12deg); }
+    60% { transform: rotate(-10deg); }
+    80% { transform: rotate(8deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.emoji-hand {
+    display: inline-block; /* Asegura que solo el emoji se mueva */
+    animation: wave-animation 1.5s infinite; /* Repite indefinidamente */
+    transform-origin: 70% 70%; /* Ajusta el punto de origen de la rotación */
+    margin-right: 3px;
+    margin-left: -5px;
+    font-size: 20px;
+    justify-content: center;
+    bottom: 10px;
+}
+
 .iconos{
     margin-top: 20px;
     margin-left: 130px;
@@ -113,8 +146,6 @@ a:hover{
 
 
 
-
-
 /* Avatar Para pantallas más grandes */
 @media (min-width: 1080px) {
     .avatar {
@@ -130,7 +161,7 @@ a:hover{
     .avatar {
         max-width: 450px;
         margin-left: 40.5%;
-        margin-top: -20.5%;
+        margin-top: -24.5%;
     }
 }
 
@@ -432,17 +463,7 @@ hr.solid{
     font-weight: bold;
 }
 
-/* Estilos de los encabezados */
-h3 {
-    font-size: 18px;
-    color: #7648d7;
-}
 
-h2 {
-    font-size: 24px;
-    color: #FFFFFF;
-    font-weight: bold;
-}
 
 
 
@@ -452,6 +473,7 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-left: 100px;
 }
 
 
@@ -473,7 +495,7 @@ h2 {
 
 /* Fondo y borde del segundo contenedor */
 .grid-container .grid-item:nth-child(2) {
-    background-color: #3C3C4E; /* Fondo específico */
+    background-color:#2d254a; /* Fondo específico */
     border: 2px solid #7648D7; /* Borde específico */
     border-radius: 10px;
 }
@@ -486,11 +508,6 @@ h2 {
     background: transparent;
 }
 
-/* Estilos adicionales para hover */
-.grid-container .grid-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra para mejorar el efecto visual */
-}
 
 
 /* Elemento de la cuadrícula */
@@ -501,11 +518,35 @@ h2 {
     transition: transform 0.3s;
     background-color: transparent;
     border: #1E1E2F;
+   display: flex;
+   flex-direction: column;
+   
+    
 }
 
+.grid-item i {
+    display: flex;
+    flex-direction: column;
+    font-size: 70px;
+    padding: 10px;    
+}
+
+.grid-item h2 {
+    
+    font-size: 30px;
+       
+}
+
+.grid-item h3 {
+    color: rgb(190, 184, 180);
+    font-size: 15px;
+    padding: 10px;
+       
+}
 /* Efecto de zoom al pasar el ratón */
-.grid-item:hover {
+.grid-item:hover{
     transform: scale(1.05);
+    box-shadow: 0 0 40px 10px rgba(98, 0, 234, 0.5);
 }
 
 
@@ -515,6 +556,7 @@ h2 {
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease; /* Animación suave para hover */
+    background: transparent;
 }
 
 /* Estilos para el texto pequeño */
@@ -528,25 +570,31 @@ h2 {
 /* Estilos para el texto grande */
 .large-text {
     font-size: 20px;
-    color: #A392EC; /* Color del texto principal */
+    color: #ccc4f1; /* Color del texto principal */
     font-weight: bold;
 }
 
 /* Efecto hover para los bloques de texto */
 .text-block:hover {
     transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-    background-color: #25254A; /* Cambia de color al pasar el mouse */
+    background-color: #c52dda; /* Cambia de color al pasar el mouse */
+    box-shadow: 0 0 40px 10px rgba(98, 0, 234, 0.5);
+   
+    
 }
 
-/* Estilos de los encabezados */
-
-h3 {
-    font-size: 18px;
-    color: #7648d7;
+.text-block:hover .large-text, 
+.text-block:hover .small-text {
+    color: white;
 }
 
-h2 {
-    font-size: 24px;
-    color: #FFFFFF;
-    font-weight: bold;
+.grid-container-unified-text{
+    display: grid;
+    grid-template-columns: repeat(3, 240px);  
+    gap: 10px; 
+    border: 2px solid #4e31d1;
+    background-color: #2d2541;
+    border-radius: 10px;
+    
+   
 }
