@@ -314,10 +314,26 @@ a:hover{
 }
 
 
-.icono-flotante:hover {
-    transform: rotate(360deg); /* Gira el ícono 360 grados */
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
+.icono-flotante:hover,
+.icono-bg:hover {
+    animation: rotar 1.5s linear infinite; /* Rota en 2 segundos de manera infinita */
+ 
+}
+
+
+.icono-bg:hover{
+    background-color: #ccc5db;
+    box-shadow: 0 0 15px 10px #684fa0;
+}
 /* Posición del icono de React */
 .react-icon {
     top: 27%;
@@ -544,11 +560,15 @@ hr.solid{
        
 }
 /* Efecto de zoom al pasar el ratón */
-.grid-item:hover{
+.grid-item:hover {
     transform: scale(1.05);
     box-shadow: 0 0 40px 10px rgba(98, 0, 234, 0.5);
+    
 }
 
+.grid-item i:hover{
+    color: wheat;
+}
 
 /* Bloque de texto individual dentro del contenedor unificado */
 .text-block {
