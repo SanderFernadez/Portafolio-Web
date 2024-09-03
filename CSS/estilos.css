@@ -1,18 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: #1E1E2F; 
-    color: #FFFFFF; 
+body {
+    background-color: #1E1E2F;
+    color: #FFFFFF;
     font-family: 'Arial', sans-serif;
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,32 +21,33 @@ nav{
     padding-left: 1.5%;
     padding-right: 1.5%;
     font-weight: bold;
-    background-color: rgba(16, 16, 32, 0.5); 
+    background-color: rgba(16, 16, 32, 0.5);
     border-radius: 10px;
     margin-left: 120px;
     margin-right: 120px;
     margin-top: 30px;
 }
-h1{
+
+h1 {
     font-size: 25px;
 }
 
-ul li{
+ul li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-a{
+a {
     color: gray;
     text-decoration: none;
     display: inline-block;
     padding: 0px;
-    
+
 }
 
-a:hover{
+a:hover {
     color: #7648d7;
-    
+
 }
 
 
@@ -54,8 +55,8 @@ a:hover{
 
 
 .txt-Presentacion {
-    
-    padding:25px;
+
+    padding: 25px;
     padding-top: 5px;
     padding-bottom: 10px;
     justify-content: center;
@@ -67,7 +68,7 @@ a:hover{
 }
 
 
-.subtxt-Presentacion{
+.subtxt-Presentacion {
     font-size: 15px;
     color: darkgrey;
     font-family: Arial, Helvetica, sans-serif;
@@ -75,30 +76,37 @@ a:hover{
     margin-top: 8px;
 }
 
-.saludar{
-   
+.saludar {
+
     font-size: 17px;
     bottom: 25px;
     position: relative;
-    background-color: rgba(104, 62, 201, 0.15); /* Ajuste de opacidad */
-    border-radius: 15px; /* Aumenta el radio del borde */
-    padding: 10px 20px; /* Añade espacio alrededor del contenido */
-    display: flex; /* Utiliza flexbox para centrar los elementos */
-    max-width: fit-content; /* Ajusta el ancho al contenido */
+    background-color: rgba(104, 62, 201, 0.15);
+    /* Ajuste de opacidad */
+    border-radius: 15px;
+    /* Aumenta el radio del borde */
+    padding: 10px 20px;
+    /* Añade espacio alrededor del contenido */
+    display: flex;
+    /* Utiliza flexbox para centrar los elementos */
+    max-width: fit-content;
+    /* Ajusta el ancho al contenido */
     color: rgb(104, 62, 201);
     box-shadow: 0 0 50px 20px rgba(96, 14, 211, 0.1);
-    
+
 }
 
-.saludar h2{
+.saludar h2 {
     font-size: 18px;
     padding: 6.5px;
-    
+
 }
 
 .saludar:hover {
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-    background-color: #c52dda; /* Cambia de color al pasar el mouse */
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño */
+    background-color: #c52dda;
+    /* Cambia de color al pasar el mouse */
     box-shadow: 0 0 40px 10px rgba(98, 0, 234, 0.5);
     color: white;
     animation: wave-animation 1.5s infinite;
@@ -106,18 +114,38 @@ a:hover{
 }
 
 @keyframes wave-animation {
-    0% { transform: rotate(0deg); }
-    20% { transform: rotate(-10deg); }
-    40% { transform: rotate(12deg); }
-    60% { transform: rotate(-10deg); }
-    80% { transform: rotate(8deg); }
-    100% { transform: rotate(0deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-10deg);
+    }
+
+    40% {
+        transform: rotate(12deg);
+    }
+
+    60% {
+        transform: rotate(-10deg);
+    }
+
+    80% {
+        transform: rotate(8deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .emoji-hand {
-    display: inline-block; /* Asegura que solo el emoji se mueva */
-    animation: wave-animation 1.5s infinite; /* Repite indefinidamente */
-    transform-origin: 70% 70%; /* Ajusta el punto de origen de la rotación */
+    display: inline-block;
+    /* Asegura que solo el emoji se mueva */
+    animation: wave-animation 1.5s infinite;
+    /* Repite indefinidamente */
+    transform-origin: 70% 70%;
+    /* Ajusta el punto de origen de la rotación */
     margin-right: 3px;
     margin-left: -5px;
     font-size: 20px;
@@ -125,23 +153,24 @@ a:hover{
     bottom: 10px;
 }
 
-.iconos{
+.iconos {
     margin-top: 20px;
     margin-left: 130px;
     justify-content: space-between;
 }
 
-#home{
-  position: relative;
+#home {
+    position: relative;
 }
 
 .avatar {
     position: relative;
-    z-index: 2; /* Asegura que el avatar quede delante del círculo */
+    z-index: 2;
+    /* Asegura que el avatar quede delante del círculo */
     max-width: 100%;
     height: auto;
     border-radius: 100%;
-    
+
 }
 
 
@@ -152,7 +181,7 @@ a:hover{
         max-width: 450px;
         margin-left: 42%;
         margin-top: -17%;
-        
+
     }
 }
 
@@ -177,26 +206,29 @@ a:hover{
 .circle {
 
     position: absolute;
-    background-color: rgba(98, 0, 234, 0.15); 
-    width: 464px;  
-    height: 460px; 
-    border-radius: 50%; 
-    z-index: 1; 
+    background-color: rgba(98, 0, 234, 0.15);
+    width: 464px;
+    height: 460px;
+    border-radius: 50%;
+    z-index: 1;
     top: 50%;
     left: 54%;
-    transform: translate(-46%, -40%); 
+    transform: translate(-46%, -40%);
     box-shadow: 0 0 40px 10px rgba(98, 0, 234, 0.5);
 }
 
-.contenedor-cv  {
+.contenedor-cv {
     display: flex;
-    flex-direction: column; /* Apila los elementos verticalmente */
-    align-items: center; /* Centra los elementos horizontalmente */
+    flex-direction: column;
+    /* Apila los elementos verticalmente */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
     font-size: 14px;
-    color: rgb(104, 62, 201); /* Color del texto general en el contenedor */
+    color: rgb(104, 62, 201);
+    /* Color del texto general en el contenedor */
     font-family: Arial, Helvetica, sans-serif;
-    
-    
+
+
 }
 
 
@@ -204,25 +236,25 @@ a:hover{
 @media (min-width: 1080px) {
     .contenedor-cv {
         margin-left: 74%;
-        margin-top: -400px; 
-        
+        margin-top: -400px;
+
     }
 }
 
 /* Boton de descarga Para laptops o pantallas medianas */
 @media (max-width: 1608px) and (min-width: 768px) {
-    .contenedor-cv  {
+    .contenedor-cv {
         margin-left: 73%;
-        margin-top: -300px; 
+        margin-top: -300px;
     }
 }
 
 
 /* Boton de descarga Para pantallas pequeñas (tablets y móviles) */
 @media (max-width: 767px) {
-    .contenedor-cv  {
+    .contenedor-cv {
         margin-left: 83%;
-        margin-top: -350px; 
+        margin-top: -350px;
     }
 }
 
@@ -241,54 +273,57 @@ a:hover{
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     z-index: 5;
-    
-    
+
+
 }
 
 .flecha-descarga {
     display: flex;
-    color: #7B4AE2; /* Cambia el color del texto a morado */
-    border: none; 
+    color: #7B4AE2;
+    /* Cambia el color del texto a morado */
+    border: none;
     padding: 10px 20px;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     z-index: 5;
     margin-top: 10px;
-    background-color: transparent; /* Fondo transparente */
-    
-    
+    background-color: transparent;
+    /* Fondo transparente */
+
+
 }
 
 .flecha-descarga a {
-    color: #7B4AE2; 
+    color: #7B4AE2;
     align-items: center;
     display: flex;
-    
-    
+
+
 }
 
 .flecha-descarga a i {
     font-size: 25px;
     justify-content: center;
     margin-right: 5px;
-    
-   }
 
-   .hablemos-btn a {
-        color:#7648d7;
-   }
+}
 
-   .flecha-descarga a i:hover, 
-   .flecha-descarga a:hover,
-   .hablemos-btn a:hover 
-   {
-       color: #FFFFFF;
-   }
+.hablemos-btn a {
+    color: #7648d7;
+}
+
+.flecha-descarga a i:hover,
+.flecha-descarga a:hover,
+.hablemos-btn a:hover {
+    color: #FFFFFF;
+}
 
 .hablemos-btn i {
-    margin-right: 5px; /* Espacio entre el icono y el texto */
-    font-size: 20px; /* Tamaño del icono */
+    margin-right: 5px;
+    /* Espacio entre el icono y el texto */
+    font-size: 20px;
+    /* Tamaño del icono */
 
 }
 
@@ -297,9 +332,12 @@ a:hover{
 
 /* Fondo gris circular detrás del icono */
 .icono-bg {
-    background-color: rgba(41, 40, 40, 0.5); /* Gris semitransparente */
-    border-radius: 50%; /* Círculo perfecto */
-    padding: 20px; /* Espacio interno para dar la apariencia de círculo alrededor del icono */
+    background-color: rgba(41, 40, 40, 0.5);
+    /* Gris semitransparente */
+    border-radius: 50%;
+    /* Círculo perfecto */
+    padding: 20px;
+    /* Espacio interno para dar la apariencia de círculo alrededor del icono */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,7 +348,8 @@ a:hover{
 .icono-flotante {
     position: absolute;
     z-index: 3;
-    transition: transform 0.5s ease; /* Añade una transición suave */
+    transition: transform 0.5s ease;
+    /* Añade una transición suave */
 }
 
 
@@ -318,6 +357,7 @@ a:hover{
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -325,14 +365,16 @@ a:hover{
 
 .icono-flotante:hover,
 .icono-bg:hover {
-    animation: rotar 1.5s linear infinite; /* Rota en 2 segundos de manera infinita */
- 
+    animation: rotar 1.5s linear infinite;
+    /* Rota en 2 segundos de manera infinita */
+
 }
 
-.icono-bg:hover{
+.icono-bg:hover {
     background-color: #ccc5db;
     box-shadow: 0 0 15px 10px #684fa0;
 }
+
 /* Posición del icono de React */
 .react-icon {
     top: 27%;
@@ -352,7 +394,9 @@ a:hover{
 }
 
 /* Tamaño de íconos en pantallas grandes */
-.react-icon-size, .java-icon-size, .figma-icon-size {
+.react-icon-size,
+.java-icon-size,
+.figma-icon-size {
     width: 50px;
     height: 50px;
 }
@@ -368,27 +412,32 @@ a:hover{
 
     .react-icon {
         top: 20%;
-        left: 50%; /* Ajusta para centrar el icono */
+        left: 50%;
+        /* Ajusta para centrar el icono */
         transform: translateX(-50%);
     }
 
-    
+
 
 
     .java-icon {
         top: 40%;
-        left: 50%; /* Ajusta para centrar el icono */
+        left: 50%;
+        /* Ajusta para centrar el icono */
         transform: translateX(-50%);
     }
 
     .figma-icon {
         top: 60%;
-        left: 50%; /* Ajusta para centrar el icono */
+        left: 50%;
+        /* Ajusta para centrar el icono */
         transform: translateX(-50%);
     }
 
     /* Tamaño de íconos en pantallas medianas */
-    .react-icon-size, .java-icon-size, .figma-icon-size {
+    .react-icon-size,
+    .java-icon-size,
+    .figma-icon-size {
         width: 40px;
         height: 40px;
     }
@@ -414,18 +463,25 @@ a:hover{
     }
 
     /* Tamaño de íconos en pantallas pequeñas */
-    .react-icon-size, .java-icon-size, .figma-icon-size {
+    .react-icon-size,
+    .java-icon-size,
+    .figma-icon-size {
         width: 40px;
         height: 40px;
     }
 }
 
 
-hr.solid{
-
+.separetor hr {
+    
     border-top: 1px solid #7B4AE2;
     margin-top: 300px;
     border-color: rgba(104, 69, 184, 0.2);
+}
+
+.separetor-Sobre-Mi hr {
+    border-top: 1px solid #f3f3f3;
+    border-color: rgba(143, 95, 240, 0.2);
 }
 
 /* Sección Info-extra */
@@ -440,21 +496,27 @@ hr.solid{
 /* Contenedor de la cuadrícula */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
-    gap: 20px; /* Espacio entre los elementos */
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas iguales */
+    gap: 20px;
+    /* Espacio entre los elementos */
     text-align: center;
     color: #ffffff;
 }
 
 /* Estilo específico para el contenedor unificado */
 .unified-text {
-    grid-column: span 3; /* Ocupa todo el ancho */
-    background-color: #17172C; /* Fondo oscuro */
+    grid-column: span 3;
+    /* Ocupa todo el ancho */
+    background-color: #17172C;
+    /* Fondo oscuro */
     padding: 30px;
     border-radius: 10px;
     display: flex;
-    justify-content: space-between; /* Espacio entre los elementos */
-    align-items: center; /* Centrado vertical */
+    justify-content: space-between;
+    /* Espacio entre los elementos */
+    align-items: center;
+    /* Centrado vertical */
 }
 
 /* Bloque de texto individual dentro del contenedor unificado */
@@ -467,14 +529,16 @@ hr.solid{
 /* Estilos para el texto pequeño */
 .small-text {
     font-size: 14px;
-    color: #8E7CC3; /* Color más claro */
+    color: #8E7CC3;
+    /* Color más claro */
     margin-bottom: 5px;
 }
 
 /* Estilos para el texto grande */
 .large-text {
     font-size: 20px;
-    color: #A392EC; /* Color del texto principal */
+    color: #A392EC;
+    /* Color del texto principal */
     font-weight: bold;
 }
 
@@ -495,30 +559,36 @@ hr.solid{
 /* Contenedor de la cuadrícula */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
-    gap: 20px; /* Espacio entre los elementos */
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas iguales */
+    gap: 20px;
+    /* Espacio entre los elementos */
     text-align: center;
     color: #ffffff;
 }
 
 /* Fondo y borde del primer contenedor */
 .grid-container .grid-item:nth-child(1) {
-    background-color: transparent; 
-    border: 2px solid #5857E5; /* Borde específico */
+    background-color: transparent;
+    border: 2px solid #5857E5;
+    /* Borde específico */
     border-radius: 10px;
 }
 
 /* Fondo y borde del segundo contenedor */
 .grid-container .grid-item:nth-child(2) {
-    background-color:#2d254a; /* Fondo específico */
-    border: 2px solid #7648D7; /* Borde específico */
+    background-color: #2d254a;
+    /* Fondo específico */
+    border: 2px solid #7648D7;
+    /* Borde específico */
     border-radius: 10px;
 }
 
 /* Fondo y borde del tercer contenedor */
 .grid-container .grid-item:nth-child(3) {
-    
-    border: 2px solid #4e31d1; /* Borde específico */
+
+    border: 2px solid #4e31d1;
+    /* Borde específico */
     border-radius: 10px;
     background: transparent;
 }
@@ -533,87 +603,193 @@ hr.solid{
     transition: transform 0.3s;
     background-color: transparent;
     border: #1E1E2F;
-   display: flex;
-   flex-direction: column;
-   
-    
+    display: flex;
+    flex-direction: column;
+
+
 }
 
 .grid-item i {
     display: flex;
     flex-direction: column;
     font-size: 70px;
-    padding: 10px;    
+    padding: 10px;
 }
 
 .grid-item h2 {
-    
+
     font-size: 30px;
-       
+
 }
 
 .grid-item h3 {
     color: rgb(190, 184, 180);
     font-size: 15px;
     padding: 10px;
-       
+
 }
+
 /* Efecto de zoom al pasar el ratón */
 .grid-item:hover {
     transform: scale(1.05);
     box-shadow: 0 0 40px 10px rgba(98, 0, 234, 0.5);
-    
+
 }
 
-.grid-item i:hover{
+.grid-item i:hover {
     color: wheat;
 }
 
 /* Bloque de texto individual dentro del contenedor unificado */
 .text-block {
-    background-color: #1E1E3F; /* Fondo para cada bloque de texto */
+    background-color: #1E1E3F;
+    /* Fondo para cada bloque de texto */
     padding: 20px;
     border-radius: 10px;
-    transition: transform 0.3s ease; /* Animación suave para hover */
+    transition: transform 0.3s ease;
+    /* Animación suave para hover */
     background: transparent;
 }
 
 /* Estilos para el texto pequeño */
 .small-text {
-    
+
     font-size: 14px;
-    color: #8E7CC3; /* Color más claro */
+    color: #8E7CC3;
+    /* Color más claro */
     margin-bottom: 5px;
 }
 
 /* Estilos para el texto grande */
 .large-text {
     font-size: 20px;
-    color: #ccc4f1; /* Color del texto principal */
+    color: #ccc4f1;
+    /* Color del texto principal */
     font-weight: bold;
 }
 
 /* Efecto hover para los bloques de texto */
 .text-block:hover {
-    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
-    background-color: #c52dda; /* Cambia de color al pasar el mouse */
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño */
+    background-color: #c52dda;
+    /* Cambia de color al pasar el mouse */
     box-shadow: 0 0 40px 10px rgba(98, 0, 234, 0.5);
-   
-    
+
+
 }
 
-.text-block:hover .large-text, 
+.text-block:hover .large-text,
 .text-block:hover .small-text {
     color: white;
 }
 
-.grid-container-unified-text{
+.grid-container-unified-text {
     display: grid;
-    grid-template-columns: repeat(3, 240px);  
-    gap: 10px; 
+    grid-template-columns: repeat(3, 240px);
+    gap: 10px;
     border: 2px solid #4e31d1;
     background-color: #2d2541;
     border-radius: 10px;
+}
+
+.foto-perfil {
+    display: flex;
+    margin-top: 140px;
+    margin-left: 100px;
+    width: 250px;
+    height: 250px;
+    background-color: wheat;
+    border-radius: 50%;
+    position: relative;
+    padding: 50px;
+    position: absolute;
     
-   
+}
+
+
+.foto-perfil:hover{
+    box-shadow: 0 0 40px 10px rgba(234, 113, 0, 0.5);
+}
+
+.biografia {
+
+    background-color: rgba(104, 62, 201, 0.15);
+    border-radius: 15px;
+    display: flex;
+    color: #8950d4;
+    box-shadow: 0 0 50px 20px rgba(96, 14, 211, 0.1);
+    margin-left: 550px;
+    height: 25px;
+    width: 110px;
+    padding: 10px 20px;
+    /* Añade espacio alrededor del contenido */
+    align-items: center;
+    position: absolute;
+    margin-top: 100px ;
+
+}
+
+.contenido {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.biografia h2 {
+
+    font-size: 15px;
+    margin: 0;
+    padding-left: 10px;
+    padding: 7.5px;
+    color: #8676aa;
+    
+}
+
+
+.biografia:hover {
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño */
+    background-color: #c52dda;
+    /* Cambia de color al pasar el mouse */
+    box-shadow: 0 0 40px 10px rgba(98, 0, 234, 0.5);
+    color: white;
+    animation: wave-animation 1.5s infinite;
+
+}
+
+.nombre {
+    position: absolute;
+    display: flex;
+    margin-left: 500px;
+    align-items: center;
+    margin-top: 90px;
+    width: 500px;
+    height: 100px;
+}
+
+.nombre h2 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.indrotuccion{
+    margin-top: 400px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 250px;
+}
+
+.indrotuccion p{
+    color: gray;
+    font-size: 16px;
+}
+
+.foto-perfil .avatar-Perfil {
+display: flex;
+position: relative;
+margin-left: -220px;
+height: 340px;
 }
